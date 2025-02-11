@@ -13,7 +13,7 @@ class BasePage:
 
     def navigate_to(self):
      url= self.base_url + self.url_segment
-     self.page.goto(url)
+     self.page.goto(url_check)
 
     def dismiss_cookies(self):
      self.page.locator("[aria-label='Godkänn alla']").click()
